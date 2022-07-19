@@ -1,0 +1,1 @@
+C:\Temp\VistasC\VistasC\VistasC.csproj;x64

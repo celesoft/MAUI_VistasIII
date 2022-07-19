@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VistasC.VistasIII"
+             Title="VistasIII">
+    <StackLayout>
+        <Label Text="Habitaciones"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+        <FlexLayout Direction="Row">
+            <CheckBox x:Name="Una"></CheckBox>
+            <Label Text="Uno" Padding="10"></Label>
+        </FlexLayout>
+        <FlexLayout Direction="Row">
+            <CheckBox x:Name="dos"></CheckBox>
+            <Label Text="Dos" Padding="10"></Label>
+        </FlexLayout>
+        <FlexLayout Direction="Row">
+            <CheckBox x:Name="Tres"></CheckBox>
+            <Label Text="Tres" Padding="10"></Label>
+        </FlexLayout>
+        <FlexLayout Direction="Row">
+            <CheckBox x:Name="Cuatro"></CheckBox>
+            <Label Text="Cuatro +" Padding="10"></Label>
+        </FlexLayout>
+
+        <FlexLayout Direction="Row">
+            <Switch x:Name="Activo" IsToggled="True" OnColor="Red" ThumbColor="Green"></Switch>
+            <Label Text="Activo" Padding="10"></Label>
+        </FlexLayout>
+
+        <Button Clicked="Button_Clicked_1" Text="Activar Todo"></Button>
+
+        <DatePicker TextColor="DarkBlue" VerticalOptions="Center" HorizontalOptions="Center" x:Name="Fechas" Format="dd/MM/yyyy" Date="07/16/2021"></DatePicker>
+        <TimePicker TextColor="Red" VerticalOptions="Center" HorizontalOptions="Center"></TimePicker>
+
+    </StackLayout>
+</ContentPage>

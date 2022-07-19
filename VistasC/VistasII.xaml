@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VistasC.VistasII"
+             Title="VistasII">
+    <ScrollView Margin="20">
+        <StackLayout Spacing="10">
+
+            <SearchBar x:Name="busccador" Placeholder="Busqueda"  SearchButtonPressed="SearchBar_SearchButtonPressed"></SearchBar>
+            <Label x:Name="Busqueda"></Label>
+
+            <Frame CornerRadius="50" BorderColor="red">
+                <Image Source="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" ></Image>
+            </Frame>
+
+            <Frame CornerRadius="5" Padding="8" BorderColor="Gray">
+                <StackLayout>
+                    <Label Text="Card Ejemplo" FontSize="14">
+                    </Label>
+                    <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill"></BoxView>
+                    <Label Text="Esto es para meter una tarjeta de Ejemplo, Esto es para meter una tarjeta de Ejemplo, "></Label>
+
+                </StackLayout>
+            </Frame>
+            <Frame CornerRadius="5" Padding="8" BorderColor="Gray">
+                <StackLayout>
+                    <Label Text="Card Ejemplo" FontSize="14">
+                    </Label>
+                    <BoxView Color="Gray" HeightRequest="2" HorizontalOptions="Fill"></BoxView>
+                    <Label Text="Esto es para meter una tarjeta de Ejemplo, Esto es para meter una tarjeta de Ejemplo, "></Label>
+
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="200" BorderColor="Blue">
+                <StackLayout>
+
+                    <Stepper Maximum="360" Increment="30" HorizontalOptions="Center" ValueChanged="Stepper_ValueChanged"></Stepper>
+                    <Label x:Name="_rotationLabel" Text="ROTATING TEXT" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                </StackLayout>
+            </Frame>
+
+            <Frame HeightRequest="200" BorderColor="Green">
+                <StackLayout>
+                    <Label x:Name="rotatingLabelSlider" Text="ROTATING LABEL" HorizontalOptions="Center" VerticalOptions="Center" FontSize="32"></Label>
+                    <Slider Maximum="360" ValueChanged="Slider_ValueChanged"></Slider>
+
+
+
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

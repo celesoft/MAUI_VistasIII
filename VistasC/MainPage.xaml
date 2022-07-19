@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VistasC.MainPage">
+			 
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+            <Label 
+                x:Name="Label"
+                Text="Hello, World!"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Entry x:Name="entNombre" Placeholder="Nombre" TextChanged="entNombre_TextChanged" Completed="entNombre_Completed" ></Entry>
+            <Entry x:Name="entApellidos" Placeholder="Apellidos" Completed="entApellidos_Completed"></Entry>
+
+            <Editor x:Name="Observaciones" Placeholder="Observaciones" AutoSize="TextChanges"></Editor>
+
+
+            <Button 
+                x:Name="CounterBtn"
+                Text="Click me"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+            <ImageButton x:Name="btnImage" Source="dotnet_bot" 
+                         Clicked="btnImage_Clicked"
+                         Pressed="btnImage_Pressed"
+                         Released="btnImage_Released"></ImageButton>
+
+            <Label Text="Viaje de corta distancia"></Label>
+            <RadioButton x:Name="Coche" Value="Coche" Content="Coche" GroupName="Corta" CheckedChanged="Ligero_CheckedChanged"></RadioButton>
+            <RadioButton x:Name="Moto" Value="Moto" Content="Moto" GroupName="Corta" CheckedChanged="Ligero_CheckedChanged" ></RadioButton>
+
+            <Label Text="Viaje de larga distacincia"></Label>
+            <RadioButton x:Name="Tren" Value="Tren" Content="Tren" GroupName="Larga" CheckedChanged="Pesado_CheckedChanged"></RadioButton>
+            <RadioButton x:Name="Bus" Value="Bus" Content="Bus" GroupName="Larga" CheckedChanged="Pesado_CheckedChanged"></RadioButton>
+
+        </VerticalStackLayout>
+    </ScrollView>
+ 
+</ContentPage>
